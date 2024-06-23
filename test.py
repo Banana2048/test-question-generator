@@ -50,7 +50,7 @@ class Test:
         """
         current_question = 1
         answer_index = 0
-        answer_options = ['A', 'B', 'C', 'D']
+        answer_options = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
         print('==TEST==')
         for question in self.questions():

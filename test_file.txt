@@ -20,6 +20,11 @@ Q:In interactive multimedia applications, which of the following performance mea
 Q:If the only application that a network needs to support is voice calls, which architecture is most appropriate?
 +circuit-switching
 -packet-switching
--N/A
--N/A
+
+Q:Blah blah blah
+-yes
++no
+-maybe so
+-perhaps
+-idk man
 

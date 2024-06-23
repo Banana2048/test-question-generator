@@ -32,25 +32,21 @@ def process_test(lines) -> Test:
     test = Test()
     current_question = None
     inside_question = False
-    answer_count = 0
-    max_answers = 4
 
     for line in lines:
         if line.startswith('Q'):
             current_question = Question(line[:-1])
             inside_question = True
 
-        if answer_count >= max_answers:
+        if inside_question and line == "\n":
             test.add_question(current_question)
 
             # Reset
             current_question = None
             inside_question = False
-            answer_count = 0
 
-        if inside_question and answer_count < max_answers:
+        if inside_question:
             if line.startswith('+') or line.startswith('-'):
                 current_question.add_answer(Answer(line[:-1]))
-                answer_count += 1
 
     return test

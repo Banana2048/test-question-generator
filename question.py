@@ -32,7 +32,7 @@ class Question:
         Shuffle the answers to the question.
         """
         import random
-        num_of_answers = 4
+        num_of_answers = len(self._answers)
         indexes = list(range(num_of_answers))
         shuffled_answers = []
 
