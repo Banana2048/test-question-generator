@@ -1,0 +1,25 @@
+# Test file format:
+    # Questions start with "Q:"
+    # Answers start with "+" if it's a correct answer and "-" if it's an incorrect answer
+    # There can only be 4 answers
+    # File must end with 2 empty lines
+
+
+Q:The advantage of layered design is...
+-Software can be written in the smallest number of lines of code.
+-Competing network product designers use the same components.
+-A protocol designer at one layer doesn't need to know about the interface used by a protocol
++Interfaces are standardized.
+
+Q:In interactive multimedia applications, which of the following performance measures has a flexible constraint to ensure acceptable performance?
++packet loss
+-delay
+-delay variation
+-throughput
+
+Q:If the only application that a network needs to support is voice calls, which architecture is most appropriate?
++circuit-switching
+-packet-switching
+-N/A
+-N/A
+
