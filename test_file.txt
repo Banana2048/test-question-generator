@@ -1,7 +1,8 @@
 # Test file format:
     # Questions start with "Q:"
-    # Answers start with "+" if it's a correct answer and "-" if it's an incorrect answer
-    # There can only be 4 answers
+    # Answers start with "+" if it's a correct answer
+    # Answers start with "-" if it's an incorrect answer
+    # Answers start with "*" if it's a correct select all that apply answer
     # File must end with 2 empty lines
 
 
@@ -27,4 +28,10 @@ Q:Blah blah blah
 -maybe so
 -perhaps
 -idk man
+
+Q: This is a select all that apply question.
+*answer1
+*answer2
+-notthisone
+*answer3
 

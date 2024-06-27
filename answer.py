@@ -4,7 +4,7 @@ class Answer:
         Initialize the answer and determine its correctness.
         """
         self._answer = answer[1:]
-        self._is_correct = answer.startswith('+')
+        self._is_correct = answer.startswith('+') or answer.startswith('*')
 
     def answer(self) -> str:
         """

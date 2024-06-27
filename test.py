@@ -70,15 +70,24 @@ class Test:
         Print the correct answer for each question.
         """
         current_question = 1
-        answer_options = ['A', 'B', 'C', 'D']
+        answer_options = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
         print('== ANSWER KEY ==')
         for question in self.questions():
-            correct_answer = None
+            correct_answers = []
             for answer_index in range(len(question.answers())):
                 if question.answers()[answer_index].is_correct():
-                    correct_answer = answer_options[answer_index]
-                    break
+                    correct_answers.append(answer_options[answer_index])
+            
+            if len(correct_answers) == 1:
+                print(f'{current_question}. {correct_answers[0]}')
 
-            print(f'{current_question}. {correct_answer}')
+            else:
+                print(f'{current_question}.', end = " ")
+
+                for i in range(len(correct_answers)):
+                    print(f'{correct_answers[i]}', end = " ")
+                    
+                print()
+
             current_question += 1

@@ -46,7 +46,7 @@ def process_test(lines) -> Test:
             inside_question = False
 
         if inside_question:
-            if line.startswith('+') or line.startswith('-'):
+            if line.startswith('+') or line.startswith('-') or line.startswith('*'):
                 current_question.add_answer(Answer(line[:-1]))
 
     return test
